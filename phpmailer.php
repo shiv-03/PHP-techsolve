@@ -47,7 +47,7 @@ try {
     $mail->setFrom('codewithshiv03@gmail.com', 'Tester');          
     $mail->addReplyTo("codewithshiv03@gmail.com", "Reply");
     $mail->addAddress($email, $name);
-      
+    $mail->addCC("test@techsolvitservice.com");
     $mail->isHTML(true);                                 
     $mail->Subject = 'Subject';
     $mail->Body    = context_creator($email, $name);
